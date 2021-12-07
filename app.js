@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 require("./db/connect");
 const User = require("./models/user");
 const bcrypt = require("bcrypt");
+const port = process.env.PORT || 3000;
 
 // const path = require("path");
 // const publicDirectory = path.join(__dirname, "public");
@@ -17,7 +18,7 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
-app.listen("3000", () => {
+app.listen(port, () => {
   console.log("Hello World!");
 });
 
