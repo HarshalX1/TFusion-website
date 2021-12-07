@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Fusion</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/regi.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/089a52b9b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR START -->
+    <div class="nav-div" data-aos="fade-down" data-aos-duration="1000">
+      <nav class="navbar">
+        <div class="logo-div">
+          <a href="#" class="logo-link"
+            ><img class="logo" src="images/T-logo.png" alt="T-Fusion Logo"
+          /></a>
+        </div>
+        <ul class="nav-content">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/register" class="nav-link active">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- NAV BAR END -->
+
+    <section class="regi-section">
+      <div
+        class="regi-info-div"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+      >
+        <h1 class="regi-head">Registration:</h1>
+        <div class="para-wrap">
+          <p class="regi-info">
+            Welcome to T-Fusion!<br />You can register yourself as a Tutor where
+            in you will have to build a profile as a Tutor and you will be
+            listed when students search for tutors. <br />
+            OR <br />
+            You can register yourself as student where you have to build your
+            student profile and you will be able to search for a desired tutor
+            for yourself.
+          </p>
+        </div>
+        <img
+          src="images/regi.jpg"
+          alt="Registration Graphic"
+          class="regi-img"
+        />
+      </div>
+      <div
+        class="regi-form-div"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+      >
+        <form action="/register" method="POST" class="regi-form">
+          <label for="fname" class="fname">First Name</label>
+          <input
+            id="f-input"
+            type="text"
+            class="fname-input"
+            name="fname"
+            placeholder="Enter Your First Name"
+            required
+          />
+
+          <label for="lname" class="lname">Last Name</label>
+          <input
+            id="f-input"
+            type="text"
+            class="lname-input"
+            name="lname"
+            placeholder="Enter Your Last Name"
+            required
+          />
+
+          <label for="email" class="email">E-Mail</label>
+          <input
+            id="f-input"
+            type="email"
+            class="email-input"
+            name="email"
+            placeholder="Enter Your E-Mail"
+            required
+          />
+
+          <label for="password" class="pwd">Password</label>
+          <input
+            id="f-input"
+            type="password"
+            class="pwd-input"
+            name="password"
+            placeholder="Enter Your Password"
+            required
+          />
+
+          <label for="usertype">Signing as a</label>
+          <select name="usertype" id="user">
+            <option disabled selected>Choose User Type</option>
+            <option value="Student">Student</option>
+            <option value="Tutor">Tutor</option>
+          </select>
+          <div class="btn-wrap">
+            <button class="submit-btn" type="submit">Register</button><br />
+            <a href="#" class="login-link"
+              >Already Registered? Click here to Login!</a
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER AND SCRIPTS SECTION -->
+    <footer data-aos="fade" data-aos-duration="1000">
+      <p class="foot">© by T-Fusion. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 70,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

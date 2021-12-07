@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-Fusion</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/089a52b9b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- NAV BAR START -->
+    <div class="nav-div" data-aos="fade-down" data-aos-duration="1000">
+      <nav class="navbar">
+        <div class="logo-div">
+          <a href="#" class="logo-link"
+            ><img class="logo" src="images/T-logo.png" alt="T-Fusion Logo"
+          /></a>
+        </div>
+        <ul class="nav-content">
+          <li><a href="/" class="nav-link active">Home</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/register" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- NAV BAR END -->
+
+    <!-- HOME PAGE START -->
+    <section class="headline-section">
+      <h1
+        class="headline"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="150"
+      >
+        Imagine a place...
+      </h1>
+      <p
+        class="context"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-delay="150"
+      >
+        ...that could provide you with tutors that are just made for you...
+      </p>
+    </section>
+
+    <section class="main">
+      <section class="img-btns-section">
+        <div
+          class="ts-img-div"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <img src="images/tutor-std.jpg" alt="Graphic" class="ts-img" />
+        </div>
+        <div
+          class="action-btns-div"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <a href="/register" class="btn-link">
+            <button class="regi-btn">
+              <span><i class="fas fa-user-plus icon-t"></i></span>
+              Register Now
+            </button>
+          </a>
+
+          <a href="#" class="btn-link">
+            <button class="login-btn">
+              <span><i class="fas fa-sign-in-alt icon-l"></i></span>
+              Login
+            </button>
+          </a>
+        </div>
+      </section>
+    </section>
+    <footer data-aos="fade" data-aos-duration="1000" data-aos-delay="400">
+      <p class="foot">© by T-Fusion. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 70,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

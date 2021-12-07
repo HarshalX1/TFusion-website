@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* NAV BAR CSS START */
+
+.nav-div {
+  box-shadow: 0px 2px 5px black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 20rem;
+}
+
+.nav-content {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-left: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* NAV HOVER EFFECTS START */
+
+.nav-link:hover {
+  color: blueviolet;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 0.1rem;
+  background-color: blueviolet;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.active {
+  color: blueviolet;
+}
+
+/* NAV BAR CSS END */
+
+/* REGI PAGE CSS START */
+
+.regi-section {
+  display: flex;
+  align-items: center;
+  margin: 5rem;
+}
+
+.regi-info-div {
+  margin-left: 10rem;
+}
+
+.regi-head {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.para-wrap {
+  max-width: 80%;
+}
+
+.regi-info {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.regi-img {
+  max-width: 60rem;
+}
+
+.regi-form {
+  display: block;
+  max-width: 70%;
+  margin: 5rem auto;
+}
+
+label {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+}
+
+input {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 1rem 0rem 3rem 0rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid blueviolet;
+}
+
+#user {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 1rem 0rem 3rem 0rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  transition: all 0.3 ease-in-out;
+}
+
+#user:focus {
+  border-bottom: 2px solid blueviolet;
+}
+
+option {
+  font-size: 2.5rem;
+}
+
+.btn-wrap {
+  text-align: center;
+}
+
+.submit-btn {
+  width: 30rem;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  background-color: transparent;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.login-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: blueviolet;
+}
+
+/* REGI PAGE CSS END */
+
+/* FOOTER CSS START */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  margin-top: auto;
+}
+
+.foot {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* FOOTER CSS END */
+
+/*Responsive at 1440px START*/
+@media (max-width: 1440px) {
+  * {
+    font-size: 8px;
+  }
+}
+/*Responsive at 1440px END*/
+
+/*Responsive at 1280px START*/
+@media (max-width: 1280px) {
+  * {
+    font-size: 7px;
+  }
+}
+/*Responsive at 1280px END*/
+
+/*Responsive at 1024px START*/
+@media (max-width: 1024px) {
+  * {
+    font-size: 6px;
+  }
+}
+/*Responsive at 1024px END*/
+
+/*Responsive at 768px START*/
+@media (max-width: 768px) {
+  * {
+    font-size: 5px;
+  }
+}
+/*Responsive at 768px END*/
+
+/*Responsive at 480px START*/
+@media (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+
+  .regi-section {
+    display: block;
+  }
+
+  .regi-info-div {
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .regi-form-div {
+    max-width: 90%;
+  }
+}

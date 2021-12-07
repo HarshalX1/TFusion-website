@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+::selection {
+  background-color: blueviolet;
+  color: white;
+}
+
+/* NAV BAR CSS START */
+
+.nav-div {
+  box-shadow: 0px 2px 5px black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 20rem;
+}
+
+.nav-content {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-left: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* NAV HOVER EFFECTS START */
+
+.nav-link:hover {
+  color: blueviolet;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 0.1rem;
+  background-color: blueviolet;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.active {
+  color: blueviolet;
+}
+
+/* NAV BAR CSS END */
+
+/* HEADLINE CSS START */
+
+.headline-section {
+  text-align: center;
+  margin: 10rem 5rem;
+}
+
+.headline {
+  font-size: 5rem;
+}
+
+.context {
+  font-size: 3rem;
+}
+
+/* HEADLINE CSS END */
+
+/* IMGBTNS CSS START */
+
+.img-btns-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ts-img {
+  max-width: 80rem;
+}
+
+.action-btns-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-s,
+.icon-t,
+.icon-l {
+  font-size: 3rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.regi-btn {
+  background-color: blueviolet;
+  width: 40rem;
+  margin: 1rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4rem;
+  padding: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn {
+  background-color: black;
+  width: 40rem;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4rem;
+  padding: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.regi-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+/* IMGBTNS CSS END */
+
+/* FOOTER CSS START */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  margin-top: auto;
+}
+
+.foot {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* FOOTER CSS END */
+
+/*Responsive at 1440px START*/
+@media (max-width: 1440px) {
+  * {
+    font-size: 8px;
+  }
+}
+/*Responsive at 1440px END*/
+
+/*Responsive at 1280px START*/
+@media (max-width: 1280px) {
+  * {
+    font-size: 7px;
+  }
+}
+/*Responsive at 1280px END*/
+
+/*Responsive at 1024px START*/
+@media (max-width: 1024px) {
+  * {
+    font-size: 6px;
+  }
+}
+/*Responsive at 1024px END*/
+
+/*Responsive at 768px START*/
+@media (max-width: 768px) {
+  * {
+    font-size: 5px;
+  }
+
+  .img-btns-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ts-img {
+    margin: 5rem;
+  }
+
+  .headline-section {
+    margin: 5rem;
+  }
+}
+/*Responsive at 768px END*/
+
+/*Responsive at 480px START*/
+@media (max-width: 480px) {
+  * {
+    font-size: 4px;
+  }
+}
