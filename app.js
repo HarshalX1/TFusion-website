@@ -34,6 +34,10 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+
 app.post("/register", async (req, res) => {
   try {
     const salt = await bcrypt.genSalt();
@@ -50,5 +54,26 @@ app.post("/register", async (req, res) => {
     res.status(201).render("register");
   } catch (error) {
     res.status(400).send(error);
+  }
+});
+
+app.post("/login", async (req, res) => {
+  try {
+    const email = req.body.email;
+    const password = req.body.password;
+
+    const user = await User.findOne({ email: email });
+
+    if (user) {
+      if (await bcrypt.compare(password, user.password)) {
+        res.render("index");
+      } else {
+        res.status(401).send("Invalid Email/Password");
+      }
+    } else {
+      res.send("User not found");
+    }
+  } catch (error) {
+    console.log(error);
   }
 });

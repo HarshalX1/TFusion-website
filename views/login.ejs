@@ -25,7 +25,7 @@
         <ul class="nav-content">
           <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="/about" class="nav-link">About</a></li>
-          <li><a href="/register" class="nav-link active">Register</a></li>
+          <li><a href="/register" class="nav-link">Register</a></li>
         </ul>
       </nav>
     </div>
@@ -38,16 +38,11 @@
         data-aos-duration="1500"
         data-aos-delay="300"
       >
-        <h1 class="regi-head">Registration:</h1>
+        <h1 class="regi-head">Login:</h1>
         <div class="para-wrap">
           <p class="regi-info">
-            Welcome to T-Fusion!<br />You can register yourself as a Tutor where
-            in you will have to build a profile as a Tutor and you will be
-            listed when students search for tutors. <br />
-            OR <br />
-            You can register yourself as student where you have to build your
-            student profile and you will be able to search for a desired tutor
-            for yourself.
+            Welcome to T-Fusion!<br />
+            Please Login using your credentials to access the application!
           </p>
         </div>
         <img
@@ -62,27 +57,7 @@
         data-aos-duration="1500"
         data-aos-delay="300"
       >
-        <form action="/register" method="POST" class="regi-form">
-          <label for="fname" class="fname">First Name</label>
-          <input
-            id="f-input"
-            type="text"
-            class="fname-input"
-            name="fname"
-            placeholder="Enter Your First Name"
-            required
-          />
-
-          <label for="lname" class="lname">Last Name</label>
-          <input
-            id="f-input"
-            type="text"
-            class="lname-input"
-            name="lname"
-            placeholder="Enter Your Last Name"
-            required
-          />
-
+        <form action="/login" method="POST" class="regi-form">
           <label for="email" class="email">E-Mail</label>
           <input
             id="f-input"
@@ -103,16 +78,10 @@
             required
           />
 
-          <label for="usertype">Signing as a</label>
-          <select name="usertype" id="user">
-            <option disabled selected>Choose User Type</option>
-            <option value="Student">Student</option>
-            <option value="Tutor">Tutor</option>
-          </select>
           <div class="btn-wrap">
-            <button class="submit-btn" type="submit">Register</button><br />
-            <a href="/login" class="login-link"
-              >Already Registered? Click here to Login!</a
+            <button class="submit-btn" type="submit">Login</button><br />
+            <a href="/register" class="login-link"
+              >Not Registered? Click here to register!</a
             >
           </div>
         </form>
