@@ -51,9 +51,12 @@ app.post("/register", async (req, res) => {
     });
 
     const registered = await registerUser.save();
-    res.status(201).render("register");
+    res.status(201).render("login");
+    console.log("Registration Successful");
   } catch (error) {
     res.status(400).send(error);
+    console.log(error);
+    console.log("Registration Error!");
   }
 });
 
